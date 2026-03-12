@@ -1,19 +1,20 @@
 server:
-  port: 7707
+ port: 7077
 
 spring:
-  application:
-    name: user-service
+ datasource:
+   url: jdbc:mysql://localhost:3306/userdb
+   username: root
+   password: smit
 
-  config:
-    import: "configserver:http://localhost:7777"
-
-  cloud:
-    config:
-      fail-fast: true
+ jpa:
+   hibernate:
+     ddl-auto: update
+   show-sql: true
 
 management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+ endpoints:
+   web:
+     exposure:
+       include: "*"
+
