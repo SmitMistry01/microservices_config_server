@@ -16,5 +16,5 @@ management:
         include: '*'
 eureka:
   client:
-    service-url: null
-    defaultZone: 'http://localhost:7779/eureka/'
+    service-url:
+      defaultZone: 'http://localhost:7779/eureka/'
