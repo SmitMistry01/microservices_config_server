@@ -12,13 +12,6 @@ spring:
     config:
       fail-fast: true
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7779/eureka
-  instance:
-    prefer-ip-address: true
-
 management:
   endpoints:
     web:
